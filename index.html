@@ -6,111 +6,87 @@
     <title>Akash Awase - DevOps Engineer</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('https://img.freepik.com/free-photo/sparkling-lights-festive-background-with-texture_23-2148139713.jpg?w=1380&t=st=1705360335~exp=1705360935~hmac=87c4e61e3ea90c21a0d44b9b182b41e7ae2f5a69331f17ffe0da5d937a305ab0') center/cover fixed no-repeat;
-            color: #fff;
-            margin: 20px;
+            background-image: url('https://img.freepik.com/free-photo/sparkling-lights-festive-background-with-texture_23-2148139713.jpg?w=1380&t=st=1705360335~exp=1705360935~hmac=87c4e61e3ea90c21a0d44b9b182b41e7ae2f5a69331f17ffe0da5d937a305ab0');
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
         }
 
         header {
             text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 119, 181, 0.8);
-            transition: background-color 0.5s ease;
-        }
-
-        header:hover {
-            background-color: rgba(0, 85, 128, 0.8);
+            padding: 50px;
         }
 
         h1 {
-            margin-bottom: 5px;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        section {
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         h2 {
-            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin: 20px;
+            float: right;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
         }
 
         a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #ffd700;
-        }
-
-        .certifications {
-            background-color: rgba(220, 230, 241, 0.9);
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            background-color: rgba(0, 119, 181, 0.8);
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .skill {
-            background-color: #0077b5;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .skill:hover {
-            background-color: #004466;
-            transform: scale(1.05);
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Akash Awase</h1>
-        <p>DevOps Engineer</p>
+        <div class="container">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFAQMdwnFDrag/profile-displayphoto-shrink_800_800/0/1699396424173?e=2147483647&v=beta&t=5DVnj2bWuAeg_vknBKnsnrQg_JN7Uu3AXxSDGsOOf1Q" alt="Akash Awase" class="profile-img">
+            <h1>Akash Awase</h1>
+            <h2>DevOps Engineer</h2>
+        </div>
     </header>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:aakashawase@gmail.com">aakashawase@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akash-awase-b89191135/" target="_blank">Akash Awase</a></p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Passionate DevOps Engineer with expertise in AWS, Terraform, Kubernetes, Ansible, GitOps, CloudFoundry, Linux, and GitHub. Currently working on GCP, GKE, and GitHub Actions. Interested in AiOps to enhance operational efficiency.</p>
+        </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">AWS</div>
-            <div class="skill">Terraform</div>
-            <div class="skill">Kubernetes</div>
-            <div class="skill">Ansible</div>
-            <div class="skill">GitOps</div>
-            <div class="skill">CloudFoundry</div>
-            <div class="skill">Linux</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">GCP</div>
-            <div class="skill">GKE</div>
-            <div class="skill">GitHub Actions</div>
-        </div>
-    </section>
+        <section>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:aakashawase@gmail.com">aakashawase@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/akash-awase-b89191135/" target="_blank">Akash Awase</a></p>
+            </div>
+        </section>
+    </div>
 
-    <section class="certifications">
-        <h2>Certifications</h2>
-        <p>AWS Certified Solutions Architect - Associate</p>
-    </section>
 </body>
 </html>
